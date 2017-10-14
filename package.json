@@ -1,0 +1,32 @@
+{
+  "name": "multiroom_chat",
+  "version": "1.0.0",
+  "description": "Um chat com várias salas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunover/multiroom_chat.git"
+  },
+  "keywords": [
+    "multiroom_chat"
+  ],
+  "author": "Bruno Leandro de Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunover/multiroom_chat/issues"
+  },
+  "homepage": "https://github.com/brunover/multiroom_chat#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "dateformat": "^3.0.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.2.1",
+    "moment": "^2.19.1",
+    "socket.io": "^2.0.3"
+  }
+}
