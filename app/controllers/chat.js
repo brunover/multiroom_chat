@@ -14,12 +14,12 @@ module.exports.inicia_chat = function (application, req, res) {
     } else {
         // O 'emit' é um pedido do socket.io para executar alguma ação
         application.get('io').emit(
-            'msgParaCliente', {
+            'newPerson', {
                 apelido: dadosForm.apelido,
                 msg: ' acabou de entrar no chat'
             }
         );
-
+        
         res.render('chat', {
             apelido: dadosForm.apelido
         });

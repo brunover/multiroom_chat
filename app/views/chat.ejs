@@ -156,6 +156,21 @@
 					}	
 				});
 
+				socket.on('newPerson', function (data) {
+					if (!jQuery.isEmptyObject(data)) {
+						var newSystemDialog = 
+							`<div class="system-msg">
+								<h4>${data.apelido}</h4>
+								<p>${data.msg}</p>
+							</div>`;
+
+						$('#dialogos').append(newSystemDialog);
+
+						// Desce a barra de rolagem para o final
+						window.scrollTo(0, document.body.scrollHeight);
+					}	
+				});
+
 				// O 'on' ouve pedidos de conexão enviados por um 'emit'
 				socket.on('participantesParaCliente', function (data) {
 					if (!jQuery.isEmptyObject(data)) {						
