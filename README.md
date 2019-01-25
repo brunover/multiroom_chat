@@ -1,2 +1,2 @@
 # multiroom_chat
-Criando um multiroom_chat usando NodeJS
+Multiroom chat made with NodeJS and SocketIO
